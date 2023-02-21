@@ -8,9 +8,12 @@ if opcion == "Manual":
     st.write(random.choice(manual))
 if opcion == "En línea":
     opcion_en_linea = st.radio("Escoge:",("Solo","Con amigos"))
-    solo = ["Minesweeper","Minecraft","Ver youtube","Ver una película"]
+    solo = ["Minesweeper","Minecraft","Ver youtube","Ver una película","ah"]
     if opcion_en_linea == "Solo":
-        st.write(random.choice(solo))
+        if opcion_en_linea != "ah":
+            st.write(random.choice(solo))
+        elif opcion_en_linea == "ah":
+            st.error("¿No tienes amigos o qué?")
     elif opcion_en_linea == "Con amigos":
         conamigos = ["Minecraft","Roblox","Hacer videollamada"]
         st.write(random.choice(conamigos))
