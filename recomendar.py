@@ -12,7 +12,7 @@ if opcion == "En línea":
     if opcion_en_linea == "Solo":
         if opcion_en_linea != "ah":
             st.write(random.choice(solo))
-        else:
+        if opcion_en_linea == "ah":
             st.error("¿No tienes amigos o qué?")
     elif opcion_en_linea == "Con amigos":
         conamigos = ["Minecraft","Roblox","Hacer videollamada"]
