@@ -4,12 +4,16 @@ import random
 st.header("Recomendaciones")
 opcion = st.radio("Escoge tu tipo de pasamiento favorito",("Manual","En línea","Intelectual"))
 if opcion == "Manual":
-    st.write(random.choice["Pintura","Escritura","Origami"])
+    manual = ["Pintura","Escritura","Origami"]
+    st.write(random.choice(manual))
 if opcion == "En línea":
     opcion_en_linea = st.radio("Escoge:",("Solo","Con amigos"))
+    solo = ["Minesweeper","Minecraft","Ver youtube","Ver una película"]
     if opcion_en_linea == "Solo":
-        st.write(random.choice["Minesweeper","Minecraft","Ver youtube","Ver una película"])
+        st.write(random.choice(solo))
     elif opcion_en_linea == "Con amigos":
-        st.write(random.choice["Minecraft","Roblox","Hacer videollamada"])
+        conamigos = ["Minecraft","Roblox","Hacer videollamada"]
+        st.write(random.choice(conamigos))
 if opcion == "Intelectual":
-    st.write(random.choice["Leer un libro","Hacer un sudoku","Leer el periódico"])
+    intelectual = ["Leer un libro","Hacer un sudoku","Leer el periódico"]
+    st.write(random.choice(intelectual))
